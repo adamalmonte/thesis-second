@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Adam almonte thesis</title>
+        <style type="text/css">
+            body {
+                min-height: 100vh;
+                background-color: #ddd;
+                margin: 0;
+            }
+
+            .navbar {
+                background-color: #fff;
+                height: 56px;
+                width: 100%;
+                border-bottom: 4px solid orangered;
+                padding: 12px 0;
+            }
+
+            .navbar__spacer {
+                display: flex;
+                justify-content: space-between;
+                max-width: 1280px;
+                margin: 0 auto;
+                height: 100%;
+            }
+
+            .navbar__logo {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .navbar__logo h1 {
+                font-family: serif;
+                color: orangered;
+                font-size: 36px;
+                margin: 0;
+            }
+
+            .navbar__links,
+            .navbar__buttons {
+                width: 40%;
+            }
+
+            .navbar__links ul {
+                list-style-type: none;
+                display: flex;
+                justify-content: space-between;
+                height: 100%;
+                margin: 0;
+            }
+
+            .navbar__links li {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .navbar__links li + li {
+                border-left: 2px solid #000;
+            }
+
+            .navbar__link {
+                text-transform: uppercase;
+                text-decoration: none;
+                color: #000;
+                transition: color 0.4s;
+                padding: 10px;
+                font-size: 18px;
+            }
+
+            .navbar__link:hover {
+                color: orangered;
+            }
+
+            .navbar__login {
+                border: none;
+                outline: none;
+                font-size: 18px;
+                text-transform: uppercase;
+                transition: color 0.4s;
+                cursor: pointer;
+            }
+
+            .navbar__login:hover {
+                color: orangered;
+            }
+
+            .navbar__choose {
+                border: 2px solid orangered;
+                padding: 10px 0;
+                width: 240px;
+                transition: background-color 0.4s, color 0.4s;
+                font-size: 18px;
+                text-transform: uppercase;
+                cursor: pointer;
+
+            }
+
+            .navbar__choose:hover {
+                background-color: orangered;
+                color: white;
+            }
+
+            .navbar__buttons {
+                display: flex;
+            }
+
+            .navbar__buttons-spacer {
+                width: auto;
+                /* display: inline-block; */
+                margin-left: auto;
+            }
+        </style>
+    </head>
+
+    <body>
+        <nav class="navbar">
+            <div class="navbar__spacer">
+                <div class="navbar__links">
+                    <ul>
+                        <li><a class="navbar__link" href="#">Menus</a></li>
+                        <li><a class="navbar__link" href="#">How it works</a></li>
+                        <li><a class="navbar__link" href="#">Plans</a></li>
+                        <li><a class="navbar__link" href="#">Why Plated</a></li>
+                    </ul>
+                </div>
+                <div class="navbar__logo">
+                    <h1>Plately</h1>
+                </div>
+                <div class="navbar__buttons">
+                    <div class="navbar__buttons-spacer">
+                        <button class="navbar__login">
+                            Log In
+                        </button>
+                        <button class="navbar__choose">
+                            Choose Your Plan
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </body>
+</html>
